@@ -6,6 +6,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'home',
     component: () => import('../views/Home.vue')
   },
+  {
+    path: '/task1',
+    name: 'users',
+    component: () => import('../views/Users.vue')
+  },
+  {
+    path: '/task2',
+    name: 'textarea',
+    component: () => import('../views/Textarea.vue')
+  },
   // {
   //   path: '/about',
   //   name: 'about',

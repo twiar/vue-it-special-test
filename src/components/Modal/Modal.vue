@@ -31,6 +31,9 @@ const preview = (el: Event) => {
 			elem.style['objectFit'] = 'cover';
 			elem.style['width'] = '100%';
 			elem.style['height'] = '100%';
+			elem.style['position'] = 'absolute';
+			elem.style['left'] = '0';
+			elem.style['right'] = '0';
 			document.querySelector('#image-wrapper')?.appendChild(elem);
 		});
 	}
@@ -127,6 +130,9 @@ watch(() => form.value.role, (newVal, oldVal) => {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		position: absolute;
+		left: 0;
+		right: 0;
 	}
 }
 
